@@ -1,84 +1,209 @@
- # syllabus
+Here’s your **exam syllabus** converted into a **GitHub `README.md`** format with **checklists** for functional use. This format allows you to **track your preparation** efficiently as you aim for 48 out of 50 marks.
 
-Updated Exam Syllabus for Python and Django
+---
 
-1. Python Programming Fundamentals
+# ✅ Python, OOP, Web & Django – Exam Preparation Checklist (Target: 48/50)
 
-# Python Basics:
-## Variables, data types, print.
-## Loops (for, while), conditionals (if-else).
-Example: Print “Hello” 5 times, check if number is even.
+> ⏱️ **Time Left**: \~18 Hours
+> 🎯 **Target Score**: 48/50
+> 🧑‍💻 **Level**: Beginner
+> 📚 **Sources**: Classroom Notes, Lab Sheets, Previous Year Questions
 
-### Lists, Tuples, Sets:
-Lists: Create, access (e.g., ["apple", "banana"]).
-Tuples: Immutable (e.g., (1, 2)).
-Sets: Unique elements (e.g., {1, 2, 3}).
-### Functions:
-Define/call functions (e.g., def add(a, b): return a + b).
-File Input/Output:
-Read/write files with try/except (e.g., open("file.txt", "r")).
+---
 
-### 2. Object-Oriented Programming & Analysis
-Requirement Analysis:
-List class, attributes, methods from a scenario (e.g., Library → Book: title, borrow).
-Classes and Objects:
-Create/use classes (e.g., class Dog: def bark(self): print("Woof")).
-Inheritance:
-Parent-child classes with abstract methods (e.g., Animal, Cat).
+## 1. 🐍 Python Programming Fundamentals
 
-Abstract Base Classes:
+### 🔹 Python Basics
 
-Use ABC, @abstractmethod (e.g., Shape with area).
-Access Modifiers:
+* [ ] Variables, data types, `print()`
+* [ ] Loops: `for`, `while`
+* [ ] Conditionals: `if-else`
+* [ ] Practice: `text[::-1]` (reverse string)
 
-Public, private (__attribute), protected (_attribute).
-Class Diagrams:
+### 🔹 Lists, Tuples, Sets
 
-Draw class with attributes, methods (e.g., “Student”: name, study).
+* [ ] Create and access lists (e.g., `["apple", "banana"]`)
+* [ ] Tuples (immutable, e.g., `(1, 2)`)
+* [ ] Sets (unique elements, e.g., `{1, 2, 3}`)
+* [ ] Focus: Add items, basic list operations
+* ❌ No dictionaries in syllabus
 
-3. Web Development Basics
+### 🔹 Functions
 
-HTML:
-Table, form, list, button, radio-button, colspan, rowspan.
+* [ ] Define/call functions (`def add(a, b): return a + b`)
+* [ ] Practice: Function to return square of a number
 
-Example: 2x2 table, form with text input.
+### 🔹 File Input/Output
 
-CSS:
+* [ ] Read from file using `open("file.txt", "r")`
+* [ ] Write to file, handle exceptions using `try/except`
 
-Text color, font-size (e.g., p {color: blue; font-size: 16px;}).
+---
 
-4. Django Framework Essentials
-Django Architecture:
-MVT: Model (data), View (logic), Template (webpage).
-Example: URL → View → Model → Template flow.
-URLs and Views:
-Map URLs (e.g., path('posts/', views.post_list)).
-Views to list/process data (e.g., Post.objects.all()).
-Django Superuser:
-Create: python manage.py createsuperuser.
-Use: Manage data via /admin.
-Models and Admin CRUD:
-Models: Define data (e.g., Post: title, content).
-Admin: Register models (e.g., admin.site.register(Post)).
-CRUD: Create, read, update, delete.
-Django Forms – Create:
+## 2. ⚙️ Object-Oriented Programming & Analysis
 
+### 🔹 Requirement Analysis
 
-# Forms to add data (e.g., <form method="post">{% csrf_token %}<input type="text">).
-View to save (e.g., Post(title=request.POST['title']).save()).
-Django Forms – Update & Delete:
-Update: Edit data via forms (e.g., pre-filled form).
-Delete: Remove data (e.g., Post.objects.get(id=1).delete()).
-Media Handling in Django:
-Model: ImageField (e.g., photo = models.ImageField(upload_to='images/')).
-Settings: MEDIA_URL, MEDIA_ROOT.
+* [ ] Identify classes, attributes, and methods from a scenario
+* [ ] Practice: Library → Book → title, borrow()
 
-Form: File upload (e.g., <form enctype="multipart/form-data">).
+### 🔹 Classes and Objects
 
-5. Previous Year Questions
+* [ ] Define class with attributes and methods
+* [ ] Example:
 
-Solve Python, OOP, HTML, CSS, Django questions from shared materials.
+```python
+class Dog:
+    def bark(self):
+        print("Woof")
+```
 
-Resources: Classroom notes, lab exercises, shared materials.
-Practice: Write code/diagrams by hand.
-Focus: Python/HTML for easy marks, OOP/Django for high marks.
+### 🔹 Inheritance & Abstract Base Class
+
+* [ ] Write parent-child class with `@abstractmethod`
+* [ ] Use ABC module:
+
+```python
+from abc import ABC, abstractmethod
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+```
+
+### 🔹 Access Modifiers
+
+* [ ] Use public, protected (`_attr`), private (`__attr`)
+* [ ] Practice getter methods
+
+### 🔹 Class Diagrams
+
+* [ ] Draw class diagram with attributes/methods
+* [ ] Practice from real-world scenarios
+
+---
+
+## 3. 🌐 Web Development Basics
+
+### 🔹 HTML
+
+* [ ] Write table:
+
+```html
+<table>
+  <tr><td>1</td></tr>
+</table>
+```
+
+* [ ] Create forms with input, radio, button
+* [ ] Use `colspan`, `rowspan` in tables
+* [ ] Lists: ordered & unordered
+
+### 🔹 CSS
+
+* [ ] Style with color and font-size
+
+```css
+p {
+  color: blue;
+  font-size: 16px;
+}
+```
+
+---
+
+## 4. 🚀 Django Framework Essentials
+
+### 🔹 Django Architecture (MVT)
+
+* [ ] Explain MVT pattern
+* [ ] Draw request flow: `URL → View → Model → Template`
+
+### 🔹 URLs and Views
+
+* [ ] Map URL: `path('posts/', views.post_list)`
+* [ ] View with: `Post.objects.all()`
+* [ ] Practice writing basic View & URL
+
+### 🔹 Django Superuser
+
+* [ ] Create with:
+
+```bash
+python manage.py createsuperuser
+```
+
+* [ ] Access and use `/admin`
+
+### 🔹 Models and Admin CRUD
+
+* [ ] Define model with `title`, `content`
+* [ ] Register in admin using `admin.site.register()`
+* [ ] Perform CRUD via admin panel
+
+### 🔹 Django Forms – Create
+
+* [ ] Basic HTML Form:
+
+```html
+<form method="post">
+  {% csrf_token %}
+  <input type="text" name="title">
+</form>
+```
+
+* [ ] Save using:
+
+```python
+Post(title=request.POST['title']).save()
+```
+
+### 🔹 Django Forms – Update & Delete
+
+* [ ] Edit data using pre-filled forms
+* [ ] Delete using:
+
+```python
+Post.objects.get(id=1).delete()
+```
+
+### 🔹 Media Handling
+
+* [ ] Model with `ImageField`:
+
+```python
+photo = models.ImageField(upload_to='images/')
+```
+
+* [ ] Configure `MEDIA_URL`, `MEDIA_ROOT` in `settings.py`
+* [ ] Use `enctype="multipart/form-data"` in form
+* [ ] View for handling file upload
+
+---
+
+## 5. 📜 Previous Year Questions
+
+* [ ] Practice 3–4 sample questions:
+
+  * [ ] Write a Model
+  * [ ] Create a Table in HTML
+  * [ ] Simple Python Function
+  * [ ] Form handling in Django
+
+---
+
+## 📌 Exam Strategy
+
+* ✅ **First Attempt**: Python & HTML (easy marks)
+* 🎯 **High Focus**: OOP & Django (core marks)
+* ✍️ **Practice by Hand**: Code, diagrams
+* 🤝 **Group Support**: Ask peers for examples
+* 📚 **Final Revision**: Lab/class notes, shared materials
+
+---
+
+## 📁 Recommended Resources
+
+* Class slides and lab sheets
+* Previous year papers
+* Your group messages (for Django/media/form help)
