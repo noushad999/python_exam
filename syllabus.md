@@ -1,5 +1,5 @@
 
-# ✅ Python, OOP, Web & Django – Exam Preparation Checklist (Target: 48/50)
+# ✅ Python, OOP, Web & Django – Exam Preparation Checklist (Target: Pass)
 
 > ⏱️ **Time Left**: \~18 Hours
 > 🎯 **Target Score**: 48/50
