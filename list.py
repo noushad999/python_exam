@@ -1,3 +1,8 @@
+# Syntex: list[start:end:step]
+# start: শুরুর ইনডেক্স (অন্তর্ভুক্ত)
+# end: শেষের ইনডেক্স (বাদ যায়)
+# step: কত ধাপ এগিয়ে যাবে।
+
 fruits=["apple","banana","orrange"]
 print(fruits)
 print(fruits[0]) #accessing first element
