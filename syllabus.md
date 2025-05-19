@@ -1,6 +1,3 @@
-Here’s your **exam syllabus** converted into a **GitHub `README.md`** format with **checklists** for functional use. This format allows you to **track your preparation** efficiently as you aim for 48 out of 50 marks.
-
----
 
 # ✅ Python, OOP, Web & Django – Exam Preparation Checklist (Target: 48/50)
 
